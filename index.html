@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <h1>Churrascômetro</h1>
+    <main id="main-div">
+        <p>Fique por dentro de todas as novidades.<br><br>Cadastre seu e-mail e receba promoções especiais!</p>
+        <form class="form-cadastro" action="" onsubmit="validarFormulario(event)">
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <p id="error-message-name">O nome deve conter, no mínimo, 3 caracteres.</p>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            <p id="error-message-email">Digite um endereço de e-mail válido.</p>
+            <input type="number" name="cep" id="cep" placeholder="Digite seu CEP" required>
+            <p id="error-message-cep">O CEP deve ter 8 dígitos numéricos.</p>
+            <div class="div-checkbox">
+                <input type="checkbox" name="promocoes" id="promocoes" checked>
+                <label for="promocoes">Concordo em receber
+                    comunicações e ofertas personalizadas de acordo com meus interesses.
+               </label>
+            </div>
+            <input type="submit" value="Cadastrar" class="btn-send">
+        </form>
+    </main>
+<script src="script.js"></script>   
+</body>
+</html>
